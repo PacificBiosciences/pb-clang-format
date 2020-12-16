@@ -26,7 +26,3 @@ And:
 ```py
 subproject('pb-clang-format')
 ```
-Or more generally:
-```py
-pbcf_dep = dependency('pb-clang-format', fallback : ['pb-clang-format', 'pbcf_dep'], required : true)
-```
