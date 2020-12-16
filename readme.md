@@ -18,9 +18,15 @@ program_names = tools/check-formatting
 
 In your `meson.build`:
 ```py
-pbcf_dep = dependency('pb-clang-format', fallback : ['pb-clang-format', 'pbcf_dep'], required : true)
-
 if (not meson.is_subproject())
   pbcf_check_formatting = find_program('tools/check-formatting', 'subprojects/pb-clang-format/tools/check-formatting', required : true)
 endif
+```
+And:
+```py
+subproject('pb-clang-format')
+```
+Or more generally:
+```py
+pbcf_dep = dependency('pb-clang-format', fallback : ['pb-clang-format', 'pbcf_dep'], required : true)
 ```
