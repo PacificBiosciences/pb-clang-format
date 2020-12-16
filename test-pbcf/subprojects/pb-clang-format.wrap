@@ -1,0 +1,7 @@
+[wrap-git]
+directory=pb-clang-format
+url=https://github.com/PacificBiosciences/pb-clang-format.git
+revision=main
+
+[provide]
+program_names = tools/check-formatting, otherprog
