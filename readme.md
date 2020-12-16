@@ -26,3 +26,12 @@ And:
 ```py
 subproject('pb-clang-format')
 ```
+
+## Testing
+
+```sh
+cd test-pbcf
+make clean
+make
+make clean
+```
