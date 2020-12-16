@@ -13,5 +13,5 @@ project(
 # dependency info #
 ###################
 
-pbcf_dep = declare_dependency(
-  version : meson.project_version())
+#pbcf_dep = declare_dependency(
+#  version : meson.project_version())
